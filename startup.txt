@@ -1,1 +1,1 @@
-gunicorn --bind=0.0.0.0 --timeout 600 things1:app
+gunicorn --bind=0.0.0.0 --timeout 600 app:app
