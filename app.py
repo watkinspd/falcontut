@@ -15,9 +15,9 @@ class ThingsResource:
         resp.status = falcon.HTTP_200  # This is the default status
         resp.body = ('\nHello friends! \n'
                     'This is the text that is returned '
-                     'from the get method.\n'
+                     'from the http get method.\n'
                      '\n'
-                     '    ~ The API\n\n')
+                     '    ~ The demo app\n\n')
 
 
 # falcon.App instances are callable WSGI apps
