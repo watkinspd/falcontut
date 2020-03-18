@@ -1,1 +1,1 @@
-gunicorn --timeout 600 app:app
+gunicorn --bind 127.0.0.1:8000 --timeout 600 app:app
