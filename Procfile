@@ -1,0 +1,1 @@
+web: gunicorn --bind :8000 --timeout 600 app:app
