@@ -1,0 +1,2 @@
+gcloud builds submit --tag gcr.io/<your google project>/falcontut
+gcloud run deploy falcontut --image gcr.io/<your google project>/falcontut --allow-unauthenticated --platform=managed --port=8050 --region=us-central1

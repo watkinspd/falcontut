@@ -1,2 +1,0 @@
-gcloud builds submit --tag gcr.io/pdwa-1259/falcontut
-gcloud run deploy falcontut --image gcr.io/pdwa-1259/falcontut --allow-unauthenticated --platform=managed --port=8050 --region=us-central1
