@@ -32,7 +32,7 @@ things = ThingsResource()
 app.add_route('/things', things)
 app.add_route('/', things)
 
-port = int(os.environ.get(PORT, '8050'))
+port = int(os.environ.get('PORT', '8050'))
 
 if __name__ == '__main__':
     with make_server('', port, app) as httpd:
