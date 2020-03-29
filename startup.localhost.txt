@@ -1,1 +1,2 @@
-gunicorn --bind 127.0.0.1:8000 --timeout 600 app:app
+gunicorn --bind 127.0.0.1:8050 --timeout 600 app:app
+docker run  -p 8050:8050 falcontut

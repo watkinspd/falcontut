@@ -4,6 +4,7 @@
 from wsgiref.simple_server import make_server
 
 import falcon
+import os
 
 
 # Falcon follows the REST architectural style, meaning (among
@@ -31,9 +32,11 @@ things = ThingsResource()
 app.add_route('/things', things)
 app.add_route('/', things)
 
+port = int(os.environ.get(PORT, '8050'))
+
 if __name__ == '__main__':
-    with make_server('', 8000, app) as httpd:
-        print('Serving on port 8000...')
+    with make_server('', port, app) as httpd:
+        print('Serving on port '.format(port))
 
         # Serve until process is killed
         httpd.serve_forever()
